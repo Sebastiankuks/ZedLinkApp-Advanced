@@ -1,0 +1,94 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --radius: 0.75rem;
+
+  /* Brand: deep zambian green + warm copper/orange phoenix */
+  --background: 0 0% 99%;
+  --foreground: 220 14% 13%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 14% 13%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 14% 13%;
+
+  /* Deep green = primary */
+  --primary: 152 43% 38%;
+  --primary-foreground: 0 0% 98%;
+
+  /* Warm copper/orange = secondary */
+  --secondary: 50 68% 68%;
+  --secondary-foreground: 0 0% 99%;
+
+  --muted: 0 0% 95%;
+  --muted-foreground: 220 9% 45%;
+
+  --accent: 80 93% 93%;
+  --accent-foreground: 220 18% 28%;
+
+  --destructive: 0 72% 58%;
+  --destructive-foreground: 0 0% 99%;
+
+  --border: 220 13% 90%;
+  --input: 220 13% 92%;
+  --ring: 220 13% 38%;
+}
+
+.dark {
+  --background: 220 14% 18%;
+  --foreground: 0 0% 97%;
+  --card: 220 14% 22%;
+  --card-foreground: 0 0% 97%;
+  --popover: 220 14% 22%;
+  --popover-foreground: 0 0% 97%;
+  --primary: 152 68% 68%;
+  --primary-foreground: 220 14% 15%;
+  --secondary: 50 68% 68%;
+  --secondary-foreground: 220 14% 15%;
+  --muted: 220 14% 28%;
+  --muted-foreground: 220 9% 70%;
+  --accent: 80 32% 32%;
+  --accent-foreground: 0 0% 97%;
+  --destructive: 0 60% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 10%;
+  --input: 0 0% 15%;
+  --ring: 152 68% 68%;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground;
+  font-feature-settings: "rounding" 1;
+}
+
+/* Utility classes */
+.bg-gradient-hero {
+  @apply bg-gradient-to-br from-brand-green to-brand-green-deep;
+}
+
+.bg-gradient-copper {
+  @apply bg-gradient-to-br from-brand-copper to-brand-copper-deep;
+}
+
+.shadow-elegant {
+  @apply shadow-lg;
+}
+
+.shadow-card {
+  @apply shadow-sm;
+}
+
+.text-brand-copper {
+  @apply text-brand-copper;
+}
+
+.text-brand-green {
+  @apply text-brand-green;
+}
